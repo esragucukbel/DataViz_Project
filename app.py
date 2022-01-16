@@ -16,9 +16,9 @@ curr_dir = os.getcwd()
 parent_dir = os.path.dirname(curr_dir)
 
 # Data reading
-df_map = pd.read_excel(os.path.abspath(parent_dir+'/data/'+'aggregated_map_data.xlsx'))
-df_attacks = pd.read_excel(os.path.abspath(parent_dir+'/data/'+'aggregated_attacktype_data.xlsx'))
-df_yearly = pd.read_excel(os.path.abspath(parent_dir+'/data/'+'aggregated_yearly_data.xlsx'))
+df_map = pd.read_excel("aggregated_map_data.xlsx")
+df_attacks = pd.read_excel("aggregated_attacktype_data.xlsx")
+df_yearly = pd.read_excel("aggregated_yearly_data.xlsx")
 
 
 # World map
