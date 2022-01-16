@@ -16,22 +16,22 @@ curr_dir = os.getcwd()
 parent_dir = os.path.dirname(curr_dir)
 
 # Data reading
-df_map = pd.read_excel(parent_dir+'/data/'+'aggregated_map_data.xlsx')
-df_attacks = pd.read_excel(parent_dir+'/data/'+'aggregated_attacktype_data.xlsx')
-df_yearly = pd.read_excel(parent_dir+'/data/'+'aggregated_yearly_data.xlsx')
+df_map = pd.read_excel(parent_dir+"/data/"+"aggregated_map_data.xlsx")
+df_attacks = pd.read_excel(parent_dir+"/data/"+"aggregated_attacktype_data.xlsx")
+df_yearly = pd.read_excel(parent_dir+"/data/"+"aggregated_yearly_data.xlsx")
 
 # World map
 def update_map():
 
-    df_map['hover_text'] = 'Country: ' + df_map["country_txt"].astype(str) + "<br>" + 'Unsafety Index: ' + df_map['calculated_index'].round(decimals= 2).astype(str) + '<br>'+'# of Killed and Wounded People: ' +  df_map['total_kills_injured'].astype(str)+ '<br>'+'# of Killed People: '+  df_map['nkill'].astype(str)+ '<br>'+ '# of Wounded People: '+  df_map['nwound'].astype(str)
+    df_map["hover_text"] = "Country: " + df_map["country_txt"].astype(str) + "<br>" + "Unsafety Index: " + df_map["calculated_index"].round(decimals= 2).astype(str) + "<br>"+"# of Killed and Wounded People: " +  df_map["total_kills_injured"].astype(str)+ "<br>"+"# of Killed People: "+  df_map["nkill"].astype(str)+ "<br>"+ "# of Wounded People: "+  df_map["nwound"].astype(str)
     
-    trace = go.Choropleth(locations=df_map['id'],
-                          z=df_map['calculated_index'],
-                          text=df_map['hover_text'], 
-                          hoverinfo='text' ,
+    trace = go.Choropleth(locations=df_map["id"],
+                          z=df_map["calculated_index"],
+                          text=df_map["hover_text"], 
+                          hoverinfo="text" ,
                           colorscale="rdylgn",
                           reversescale = True,
-                          marker={'line': {'color': 'rgb(180,180,180)','width': 0.5}},
+                          marker={"line": {'color': 'rgb(180,180,180)','width': 0.5}},
                           colorbar={"thickness": 20,"len": 0.7, "x": 0.9, "y": 0.7,
                                    'title': {"text": 'Safety Index', "side": "bottom"},
                                  }
