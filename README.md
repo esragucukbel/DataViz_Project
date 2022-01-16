@@ -1,4 +1,4 @@
-# Data Visualization Project - Global Terrorism Dataset
+# Exploration of worldwide Safety in Relation to Terrorist Attacks
 
 ## Table of Contents
 - [Introduction](#introduction)
