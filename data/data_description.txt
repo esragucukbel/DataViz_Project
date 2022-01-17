@@ -1,0 +1,11 @@
+The Dashboard is based on the data from Global Terrorism Database [GTD](https://www.start.umd.edu/gtd/). The GTD is an event-level database containing more than 200,000 records of terrorist attacks that took place around the world since 1970. It is maintained by the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland.
+
+The GTD defines **a terrorist attack** as the threatened or actual use of illegal force and violence by a nonstate actor to attain a political, economic, religious, or social goal through fear, coercion, or intimidation. The Dashboard does not include attacks that were attempted but ultimately unsuccessful. Success of a terrorist strike is defined according to the tangible effects of the attack. Success is not judged in terms of the larger goals of the perpetrators. 
+
+**Number of Fatalities** - the number of total confirmed fatalities for the incident. The number includes all victims and attackers who died as a direct result of the incident.
+
+**Number of Injured** - the number of confirmed non-fatal injuries to both perpetrators and victims.
+
+**Organized/NonOrganized** - the total number of attacks is divided into 2 categories: organized and nonorganized, on the basis of the information from GTD about the group name (field 'gname' in GTD) that carried out the attack. If no information about the perpetrator group is available and field 'gname' is equal to 'Unknown', the attack is considered as nonorganized.
+
+ 
