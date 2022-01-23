@@ -6,6 +6,6 @@ The GTD defines **a terrorist attack** as the threatened or actual use of illega
 
 **Number of Injured** - the number of confirmed non-fatal injuries to both perpetrators and victims.
 
-**Organized/NonOrganized** - the total number of attacks is divided into 2 categories: organized and nonorganized, on the basis of the information from GTD about the group name (field 'gname' in GTD) that carried out the attack. If no information about the perpetrator group is available and field 'gname' is equal to 'Unknown', the attack is considered as nonorganized.
+**Affilated / Non affilated** - the total number of attacks is divided into 2 categories: affilated and non affilated, on the basis of the information from GTD about the group name (field 'gname' in GTD) that carried out the attack. If no information about the perpetrator group is available and field 'gname' is equal to 'Unknown', the attack is considered as nonorganized.
 
  
