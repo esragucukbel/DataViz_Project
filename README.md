@@ -31,12 +31,20 @@ In our study, we contacted with a researher who working in thinktank which condu
 4. Comparing the affiliated and unknown attacks of most attacked countries over years in an effort to have an idea about intelligence service of countries. Affiliated attacks which were carried out by groups were identified by government, however unknown attacks were not.
 5. Inspecting the activities of most influential terrorist groups over years. Influential can be described as having much more attacks that were carried out.
 
-
 In this context, only the attacks that were attempted either they are succesful or not, classified as not doubted and only last 10 years, are taken into account. This approach allow us to evaluate data from broader perspective and obtaining more up-to-date view. The dashboard includes both Global and Country level statistics, some of them gives them opportunity to compare the data over years. Hence they can easily detect the trends especially in the areas of target type, affiliated attacks and most dangerous groups.
 
 ### Data Abstraction <a name="data-abstraction"></a>
 
+As a first approach, all data is used for visualization and the dashboard had 4 visuals, as such World Map with Safety Index, Organized and Unorganized Attacks, for selected countries teh change in organized and unorganized attacks, the change in number of killed and wounded people over years. However we have noticed that a number of countries are different than today because of political issues such as splitting or merging into another countries. This situaton caused to not show values properly on world map, beside the size of data bottlenecked the loading of visuals in our first prototype which was developed in python programming language with using Plotly and Dash library. 
 
+After preparing first prototype, we have interviewed with our user and evaluate the visuals. Color encodings on map were needed to be changed because of not being suitable for color-blinded users and not carrying the message to user as we expected. Safety Index should have taken other measures about attacks into account. Moreover the change in target type and most influential groups would convey more efficacious information for them. Showing all data (1970-2019) was not useful at all, the dynamics are constantly changing, hence last 10 years would be helpful for getting insights about current situation.
+
+In this context, we have transformed the dashboard into accommodately the need of users. Therefore data became more structured and approptiate to load them faster on user interface. The data was filtered out of last 10 years, selected only necessary fields and aggreagated with regarding to the case study. For each specific case, new dataset is structured with required filters. All dataset are described in below.
+
+- Affiliated and non-affiliated groups over years: year, country, id(code of country to be used in map), affiliation(indicator if group is unknown or has a name), unique count of events, sum of number of killed people, sum of number of wounded people
+- Target type over years:  year, country, id(code of country to be used in map), target type, unique count of events, sum of number of killed people, sum of number of wounded people
+- The numbers of injured and killed people over years: year, country, id(code of country to be used in map), unique count of events, sum of number of killed people, sum of number of wounded people 
+- The most influential terrorist groups over years: year, country, id(code of country to be used in map), group name, unique count of events, sum of number of killed people, sum of number of wounded people
 
 
 ### Visual Encoding and Interaction Design <a name="visual-encoding-and-interaction-design"></a>
