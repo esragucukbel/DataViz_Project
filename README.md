@@ -41,10 +41,10 @@ After preparing first prototype, we have interviewed with our user and evaluate 
 
 In this context, we have transformed the dashboard into accommodately the need of users. Therefore data became more structured and approptiate to load them faster on user interface. The data was filtered out of last 10 years, selected only necessary fields and aggreagated with regarding to the case study. For each specific case, new dataset is structured with required filters. All dataset are described in below.
 
-- Affiliated and non-affiliated groups over years: year, country, id(code of country to be used in map), affiliation(indicator if group is unknown or has a name), unique count of events, sum of number of killed people, sum of number of wounded people
-- Target type over years:  year, country, id(code of country to be used in map), target type, unique count of events, sum of number of killed people, sum of number of wounded people
-- The numbers of injured and killed people over years: year, country, id(code of country to be used in map), unique count of events, sum of number of killed people, sum of number of wounded people 
-- The most influential terrorist groups over years: year, country, id(code of country to be used in map), group name, unique count of events, sum of number of killed people, sum of number of wounded people
+- **Affiliated and non-affiliated groups over years:** year, country, id(code of country to be used in map), affiliation(indicator if group is unknown or has a name), unique count of events, sum of number of killed people, sum of number of wounded people
+- **Target type over years:**  year, country, id(code of country to be used in map), target type, unique count of events, sum of number of killed people, sum of number of wounded people
+- **The numbers of injured and killed people over years:** year, country, id(code of country to be used in map), unique count of events, sum of number of killed people, sum of number of wounded people 
+- **The most influential terrorist groups over years:** year, country, id(code of country to be used in map), group name, unique count of events, sum of number of killed people, sum of number of wounded people
 
 
 ### Visual Encoding and Interaction Design <a name="visual-encoding-and-interaction-design"></a>
